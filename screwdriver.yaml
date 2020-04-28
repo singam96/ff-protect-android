@@ -1,5 +1,5 @@
 shared:
-    image: maocorte/alpine-oraclejdk8
+    image: kirillo/docker-android-build-tools
 jobs:
     main:
         requires: [~pr, ~commit]
