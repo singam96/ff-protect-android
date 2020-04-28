@@ -1,5 +1,5 @@
 shared:
-    image: circleci/android:api-29
+    image: circleci/android:api-25-alpha
 jobs:
     main:
         requires: [~pr, ~commit]
