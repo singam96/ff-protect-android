@@ -1,5 +1,5 @@
 shared:
-    image: kirillo/docker-android-build-tools
+    image: circleci/android
 jobs:
     main:
         requires: [~pr, ~commit]
