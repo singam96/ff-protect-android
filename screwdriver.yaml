@@ -1,0 +1,8 @@
+shared:
+    image: maocorte/alpine-oraclejdk8
+jobs:
+    main:
+        requires: [~pr, ~commit]
+        steps:
+            - assemble: ./gradlew :app:assembleDebug
+            - test: ./gradlew :app:assembleDebugAndroidTest
